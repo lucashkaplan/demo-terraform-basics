@@ -1,11 +1,11 @@
 // This is the same as doing:
-// docker pull hashicorp/vault:1.12.6
+// docker pull hashicorp/vault:1.17.1
 resource "docker_image" "vault" {
-  name = "hashicorp/vault:1.12.6"
+  name = "hashicorp/vault:1.17.1"
 }
 
 // This is the same as doing:
-// docker run -p 8200:8200 --name "terraform-basics-vault" hashicorp/vault:1.12.6
+// docker run -p 8200:8200 --name "terraform-basics-vault" hashicorp/vault:1.17.1
 resource "docker_container" "vault" {
   name  = "terraform-basics-vault"
   image = docker_image.vault.image_id
