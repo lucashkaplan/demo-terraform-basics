@@ -1,3 +1,4 @@
+// defines what provider to use
 terraform {
   required_providers {
     docker = {
